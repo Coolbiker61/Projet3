@@ -404,7 +404,15 @@ footer
         margin: 10px auto;
     }
 }
-
+a
+{
+    text-decoration: none;
+    color: $font_he_fo;
+}
+a:visited
+{
+    color: $font_he_fo;
+}
 /*-----------------------------------------------------------------------------*/
 /*----------------------------- index.html ------------------------------------*/
 /*-----------------------------------------------------------------------------*/
@@ -413,72 +421,75 @@ footer
     display: flex;
     flex-direction: column;
     align-content: center;
-    & #menu1, & #menu2, & #menu3, & #menu4
-    {
-        width: 80%;
-        height: 320px;
-        text-align: center;
-        margin: 20px auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        box-shadow: 0 0 10px  grey;
-    }
-    & #menu1
-    {
-        background-color: $menu1_bg;
-        color: $menu1_font;
-        & h2
+    a{
+        & #menu1, & #menu2, & #menu3, & #menu4
         {
-            font-size: 40px;
+            width: 80%;
+            height: 320px;
+            text-align: center;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: 0 0 10px  grey;
         }
-        & p {
-            font-size: 50px;
-        }
-        & i
+        & #menu1
         {
-            font-size: 50px;
-            background: gradient(linear, left top, right bottom, from(#000), to(#045FB4));
-            background-clip: text;
-            text-fill-color: transparent;
+            background-color: $menu1_bg;
+            color: $menu1_font;
+            & h2
+            {
+                font-size: 40px;
+            }
+            & p {
+                font-size: 50px;
+            }
+            & i
+            {
+                font-size: 50px;
+                background: gradient(linear, left top, right bottom, from(#000), to(#045FB4));
+                background-clip: text;
+                text-fill-color: transparent;
+            }
+        }
+        & #menu2
+        {
+            background-color: $menu2_bg;
+            color: $menu2_font;
+            & h2
+            {
+                font-size: 40px;
+            }
+            & p {
+                font-size: 50px;
+            }
+        }
+        & #menu3
+        {
+            background-color: $menu3_bg;
+            color: $menu3_font;
+            & h2
+            {
+                font-size: 40px;
+            }
+            & p {
+                font-size: 50px;
+            }
+        }
+        & #menu4
+        {
+            background-color: $menu4_bg;
+            color: $menu4_font;
+            & h2
+            {
+                font-size: 40px;
+            }
+            & p {
+                font-size: 50px;
+            }
         }
     }
-    & #menu2
-    {
-        background-color: $menu2_bg;
-        color: $menu2_font;
-        & h2
-        {
-            font-size: 40px;
-        }
-        & p {
-            font-size: 50px;
-        }
-    }
-    & #menu3
-    {
-        background-color: $menu3_bg;
-        color: $menu3_font;
-        & h2
-        {
-            font-size: 40px;
-        }
-        & p {
-            font-size: 50px;
-        }
-    }
-    & #menu4
-    {
-        background-color: $menu4_bg;
-        color: $menu4_font;
-        & h2
-        {
-            font-size: 40px;
-        }
-        & p {
-            font-size: 50px;
-        }
-    }
+    
 }
 #prochainement
 {
@@ -539,15 +550,18 @@ footer
         margin: 0 20px; 
         flex-direction: row;
         flex-wrap: wrap;
-        & #menu1, & #menu2, & #menu3, & #menu4
+        a
         {
             width: 45%;
-            height: 520px;
-            text-align: center;
             margin: 20px auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            & #menu1, & #menu2, & #menu3, & #menu4
+            {
+                height: 520px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
         }
     }
     #prochainement
@@ -565,15 +579,19 @@ footer
     #menu_liste
     {
         margin: 0 50px; 
-        & #menu1, & #menu2, & #menu3, & #menu4
+        a
         {
-            width: 40%;
-            height: 620px;
-            text-align: center;
             margin: 40px auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            width: 40%;
+            & #menu1, & #menu2, & #menu3, & #menu4
+            {
+                height: 620px;
+                width: 100%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
         }
     }
     #prochainement
