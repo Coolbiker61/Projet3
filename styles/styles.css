@@ -416,15 +416,83 @@ a:visited {
 /*-----------------------------------------------------------------------------*/
 /*--------------------------- Menu1.html --------------------------------------*/
 /*-----------------------------------------------------------------------------*/
+#premier, #second, #troisieme, #quatrieme {
+  color: #353535;
+  text-align: center; }
+
+#big_menu1 {
+  background-color: #FCDFDB;
+  color: #3C1218;
+  text-align: center;
+  margin: 30px 10px; }
+  #big_menu1 header, #big_menu1 footer {
+    background-color: #FCDFDB;
+    color: #3C1218; }
+  #big_menu1 article {
+    margin-bottom: 20px;
+    padding: 20px; }
+    #big_menu1 article h4 {
+      margin-bottom: 20px; }
+    #big_menu1 article .prix {
+      font-weight: 700; }
+
 /*-----------------------------------------------------------------------------*/
 /*--------------------------- Menu2.html --------------------------------------*/
 /*-----------------------------------------------------------------------------*/
+#big_menu2 {
+  background-color: #FFF5FE;
+  color: #C77412;
+  text-align: center;
+  margin: 30px 10px; }
+  #big_menu2 header, #big_menu2 footer {
+    background-color: #FFF5FE;
+    color: #C77412; }
+  #big_menu2 article {
+    margin-bottom: 20px;
+    padding: 20px; }
+    #big_menu2 article h4 {
+      margin-bottom: 20px; }
+    #big_menu2 article .prix {
+      font-weight: 700; }
+
 /*-----------------------------------------------------------------------------*/
 /*--------------------------- Menu3.html --------------------------------------*/
 /*-----------------------------------------------------------------------------*/
+#big_menu3 {
+  background-color: #F9F9F9;
+  color: #0887FD;
+  text-align: center;
+  margin: 30px 10px; }
+  #big_menu3 header, #big_menu3 footer {
+    background-color: #F9F9F9;
+    color: #0887FD; }
+  #big_menu3 article {
+    margin-bottom: 20px;
+    padding: 20px; }
+    #big_menu3 article h4 {
+      margin-bottom: 20px; }
+    #big_menu3 article .prix {
+      font-weight: 700; }
+
 /*-----------------------------------------------------------------------------*/
 /*--------------------------- Menu4.html --------------------------------------*/
 /*-----------------------------------------------------------------------------*/
+#big_menu4 {
+  background-color: #FDFFFD;
+  color: #72BF56;
+  text-align: center;
+  margin: 30px 10px; }
+  #big_menu4 header, #big_menu4 footer {
+    background-color: #FDFFFD;
+    color: #72BF56; }
+  #big_menu4 article {
+    margin-bottom: 20px;
+    padding: 20px; }
+    #big_menu4 article h4 {
+      margin-bottom: 20px; }
+    #big_menu4 article .prix {
+      font-weight: 700; }
+
 /************************************/
 /************************************/
 /* Pour les tablettes */
@@ -438,10 +506,12 @@ a:visited {
     align-content: space-between;
     padding: 30px 10px;
     font-size: 30px; }
-    footer h6 {
+    footer .elem_footer {
       width: 50%; }
     footer .cn {
       text-align: right; }
+    footer .ml {
+      text-align: left; }
 
   /*--------------------------------index.html --------------------------*/
   #menu_liste {

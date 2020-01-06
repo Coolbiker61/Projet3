@@ -503,19 +503,136 @@ a:visited
 /*-----------------------------------------------------------------------------*/
 /*--------------------------- Menu1.html --------------------------------------*/
 /*-----------------------------------------------------------------------------*/
+#premier, #second, #troisieme, #quatrieme
+{
+    color: #353535;
+    text-align: center;
+}
+#big_menu1
+{
+    background-color: $menu1_bg;
+    color: $menu1_font;
+    text-align: center;
+    margin: 30px 10px;
+    header, footer
+    {
+        background-color: $menu1_bg;
+        color: $menu1_font;
+    }
+    & article
+    {
+        margin-bottom: 20px;
+        padding: 20px;
+        & h4
+        {
+            margin-bottom: 20px;
+        }
+        & p
+        {
 
+        }
+        & .prix
+        {
+            font-weight: 700;
+        }
+    }
+}
 /*-----------------------------------------------------------------------------*/
 /*--------------------------- Menu2.html --------------------------------------*/
 /*-----------------------------------------------------------------------------*/
+#big_menu2
+{
+    background-color: $menu2_bg;
+    color: $menu2_font;
+    text-align: center;
+    margin: 30px 10px;
+    header, footer
+    {
+        background-color: $menu2_bg;
+        color: $menu2_font;
+    }
+    & article
+    {
+        margin-bottom: 20px;
+        padding: 20px;
+        & h4
+        {
+            margin-bottom: 20px;
+        }
+        & p
+        {
 
+        }
+        & .prix
+        {
+            font-weight: 700;
+        }
+    }
+}
 /*-----------------------------------------------------------------------------*/
 /*--------------------------- Menu3.html --------------------------------------*/
 /*-----------------------------------------------------------------------------*/
+#big_menu3
+{
+    background-color: $menu3_bg;
+    color: $menu3_font;
+    text-align: center;
+    margin: 30px 10px;
+    header, footer
+    {
+        background-color: $menu3_bg;
+        color: $menu3_font;
+    }
+    & article
+    {
+        margin-bottom: 20px;
+        padding: 20px;
+        & h4
+        {
+            margin-bottom: 20px;
+        }
+        & p
+        {
 
+        }
+        & .prix
+        {
+            font-weight: 700;
+        }
+    }
+}
 /*-----------------------------------------------------------------------------*/
 /*--------------------------- Menu4.html --------------------------------------*/
 /*-----------------------------------------------------------------------------*/
+#big_menu4
+{
+    background-color: $menu4_bg;
+    color: $menu4_font;
+    text-align: center;
+    margin: 30px 10px;
+    header, footer
+    {
+        background-color: $menu4_bg;
+        color: $menu4_font;
+    }
+    & article
+    {
+        margin-bottom: 20px;
+        padding: 20px;
+        & h4
+        {
+            margin-bottom: 20px;
+        }
+        & p
+        {
 
+        }
+        & .prix
+        {
+            font-weight: 700;
+        }
+    }
+}
 
 
 
@@ -535,13 +652,16 @@ a:visited
         align-content: space-between;
         padding: 30px 10px;
         font-size: 30px;
-        & h6
+        & .elem_footer
         {
             width: 50%;
         }
         & .cn
         {
             text-align: right;
+        }
+        & .ml{
+            text-align: left;
         }
     }
     /*--------------------------------index.html --------------------------*/
