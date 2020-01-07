@@ -424,7 +424,8 @@ a:visited {
   background-color: #FCDFDB;
   color: #3C1218;
   text-align: center;
-  margin: 30px 10px; }
+  margin: 30px 10px;
+  box-shadow: 0 0 10px  grey; }
   #big_menu1 header, #big_menu1 footer {
     background-color: #FCDFDB;
     color: #3C1218; }
@@ -443,7 +444,8 @@ a:visited {
   background-color: #FFF5FE;
   color: #C77412;
   text-align: center;
-  margin: 30px 10px; }
+  margin: 30px 10px;
+  box-shadow: 0 0 10px  grey; }
   #big_menu2 header, #big_menu2 footer {
     background-color: #FFF5FE;
     color: #C77412; }
@@ -462,7 +464,8 @@ a:visited {
   background-color: #F9F9F9;
   color: #0887FD;
   text-align: center;
-  margin: 30px 10px; }
+  margin: 30px 10px;
+  box-shadow: 0 0 10px  grey; }
   #big_menu3 header, #big_menu3 footer {
     background-color: #F9F9F9;
     color: #0887FD; }
@@ -481,7 +484,8 @@ a:visited {
   background-color: #FDFFFD;
   color: #72BF56;
   text-align: center;
-  margin: 30px 10px; }
+  margin: 30px 10px;
+  box-shadow: 0 0 10px  grey; }
   #big_menu4 header, #big_menu4 footer {
     background-color: #FDFFFD;
     color: #72BF56; }
