@@ -1,0 +1,31 @@
+#big_menu4
+{
+    background-color: $menu4_bg;
+    color: $menu4_font;
+    text-align: center;
+    margin: 30px 10px;
+    box-shadow: 0 0 10px  grey;
+    header, footer
+    {
+        background-color: $menu4_bg;
+        color: $menu4_font;
+    }
+    & article
+    {
+        margin-bottom: 20px;
+        padding: 20px;
+        & h4
+        {
+            margin-bottom: 20px;
+        }
+        & p
+        {
+
+        }
+        & .prix
+        {
+            font-weight: 700;
+        }
+    }
+}
+

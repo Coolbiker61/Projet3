@@ -1,0 +1,35 @@
+#premier, #second, #troisieme, #quatrieme
+{
+    color: #353535;
+    text-align: center;
+}
+#big_menu1
+{
+    background-color: $menu1_bg;
+    color: $menu1_font;
+    text-align: center;
+    margin: 30px 10px;
+    box-shadow: 0 0 10px  grey;
+    header, footer
+    {
+        background-color: $menu1_bg;
+        color: $menu1_font;
+    }
+    article
+    {
+        margin-bottom: 20px;
+        padding: 20px;
+        h4
+        {
+            margin-bottom: 20px;
+        }
+        p
+        {
+
+        }
+        .prix
+        {
+            font-weight: 700;
+        }
+    }
+}

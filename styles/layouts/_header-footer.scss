@@ -9,6 +9,11 @@ header
     font-size: 50px;
     text-align: center;
     font-weight: 700;
+    @media screen and (min-width: 480px)
+    {
+        font-size: 60px;
+        margin-bottom: 40px;
+    }
 }
 footer
 {
@@ -17,8 +22,29 @@ footer
     padding: 30px 0;
     font-size: 30px;
     align-content: center;
+    position: fixed;
     & h6
     {
-        margin: 10px auto;
+        margin: 20px auto;
+        animation: wiggle 3s infinite;
+        animation-fill-mode: backwards;
+    }
+    @media screen and (min-width: 480px)
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px 10px;
+        font-size: 30px;
+        & .elem_footer
+        {
+            margin: 20px;
+        }
+        & .cn
+        {
+            text-align: right;
+        }
+        & .ml{
+            text-align: left;
+        }
     }
 }
