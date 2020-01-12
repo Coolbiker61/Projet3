@@ -1,0 +1,16 @@
+@mixin marge-menu {
+	margin: 30px 10px $footer_marge_total_mobile;
+}
+@mixin ombre-menu {
+        box-shadow: 0 0 10px  grey;
+}
+@mixin marge-articles {
+        margin-bottom: 20px;
+        padding: 20px;
+}
+@mixin gradient ($color1, $color2){
+	background: linear-gradient(to bottom right, $color1 0%, $color2 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

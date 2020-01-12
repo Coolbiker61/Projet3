@@ -1,9 +1,11 @@
 @import "./vendors/reset";
 @import "./utils/variables";
 @import "./utils/keyframes";
+@import "./utils/mixins";
 @import "./compoments/bouton";
 @import "./layouts/header-footer";
 @import "./layouts/liens";
+@import "./layouts/menu";
 @import "./pages/index";
 @import "./pages/menu1";
 @import "./pages/menu2";

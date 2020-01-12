@@ -378,20 +378,22 @@ header {
 footer {
   display: flex;
   flex-direction: column;
-  padding: 30px 0;
+  padding: 0;
   font-size: 30px;
   align-content: center;
-  position: fixed; }
+  position: fixed;
+  bottom: 0vh;
+  width: 100%; }
   footer h6 {
-    margin: 20px auto;
+    margin: 10px auto;
     animation: wiggle 3s infinite;
     animation-fill-mode: backwards; }
+  footer h6:nth-child(2) {
+    animation-delay: 1.5s; }
   @media screen and (min-width: 480px) {
     footer {
       flex-direction: row;
-      justify-content: space-between;
-      padding: 30px 10px;
-      font-size: 30px; }
+      justify-content: space-between; }
       footer .elem_footer {
         margin: 20px; }
       footer .cn {
@@ -405,6 +407,11 @@ a {
 
 a:visited {
   color: #fdcb46; }
+
+h4 {
+  margin-bottom: 20px; }
+  h4:hover {
+    text-decoration: underline; }
 
 #menu_liste {
   display: flex;
@@ -436,15 +443,26 @@ a:visited {
     color: #3C1218; }
     #menu_liste #menu1 i {
       font-size: 50px;
-      background: gradient(linear, left top, right bottom, from(#000), to(#045FB4));
+      background: linear-gradient(to bottom right, #F04A5E 0%, #F78F6A 100%);
+      -webkit-background-clip: text;
       background-clip: text;
-      text-fill-color: transparent; }
+      -webkit-text-fill-color: transparent; }
   #menu_liste #menu2 {
     background-color: #FFF5FE;
     color: #C77412; }
+    #menu_liste #menu2 h2 {
+      background: linear-gradient(to bottom right, #D8852E 0%, #905BFD 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent; }
   #menu_liste #menu3 {
     background-color: #F9F9F9;
     color: #0887FD; }
+    #menu_liste #menu3 h2 {
+      background: linear-gradient(to bottom right, #D8852E 0%, #905BFD 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent; }
   #menu_liste #menu4 {
     background-color: #FDFFFD;
     color: #72BF56; }
@@ -465,6 +483,12 @@ a:visited {
     #menu_liste {
       margin: 0 50px; } }
 
+.bouton {
+  margin-bottom: 180px; }
+  @media screen and (min-width: 480px) {
+    .bouton {
+      margin-bottom: 150px; } }
+
 #premier, #second, #troisieme, #quatrieme {
   color: #353535;
   text-align: center; }
@@ -473,7 +497,7 @@ a:visited {
   background-color: #FCDFDB;
   color: #3C1218;
   text-align: center;
-  margin: 30px 10px;
+  margin: 30px 10px 120px;
   box-shadow: 0 0 10px  grey; }
   #big_menu1 header, #big_menu1 footer {
     background-color: #FCDFDB;
@@ -481,8 +505,6 @@ a:visited {
   #big_menu1 article {
     margin-bottom: 20px;
     padding: 20px; }
-    #big_menu1 article h4 {
-      margin-bottom: 20px; }
     #big_menu1 article .prix {
       font-weight: 700; }
 
@@ -490,16 +512,14 @@ a:visited {
   background-color: #FFF5FE;
   color: #C77412;
   text-align: center;
-  margin: 30px 10px;
+  margin: 30px 10px 120px;
   box-shadow: 0 0 10px  grey; }
-  #big_menu2 header, #big_menu2 footer {
+  #big_menu2 header {
     background-color: #FFF5FE;
     color: #C77412; }
   #big_menu2 article {
     margin-bottom: 20px;
     padding: 20px; }
-    #big_menu2 article h4 {
-      margin-bottom: 20px; }
     #big_menu2 article .prix {
       font-weight: 700; }
 
@@ -507,16 +527,14 @@ a:visited {
   background-color: #F9F9F9;
   color: #0887FD;
   text-align: center;
-  margin: 30px 10px;
+  margin: 30px 10px 120px;
   box-shadow: 0 0 10px  grey; }
-  #big_menu3 header, #big_menu3 footer {
+  #big_menu3 header {
     background-color: #F9F9F9;
     color: #0887FD; }
   #big_menu3 article {
     margin-bottom: 20px;
     padding: 20px; }
-    #big_menu3 article h4 {
-      margin-bottom: 20px; }
     #big_menu3 article .prix {
       font-weight: 700; }
 
@@ -524,16 +542,14 @@ a:visited {
   background-color: #FDFFFD;
   color: #72BF56;
   text-align: center;
-  margin: 30px 10px;
+  margin: 30px 10px 120px;
   box-shadow: 0 0 10px  grey; }
-  #big_menu4 header, #big_menu4 footer {
+  #big_menu4 header {
     background-color: #FDFFFD;
     color: #72BF56; }
   #big_menu4 article {
     margin-bottom: 20px;
     padding: 20px; }
-    #big_menu4 article h4 {
-      margin-bottom: 20px; }
     #big_menu4 article .prix {
       font-weight: 700; }
 

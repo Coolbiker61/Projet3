@@ -3,26 +3,17 @@
     background-color: $menu4_bg;
     color: $menu4_font;
     text-align: center;
-    margin: 30px 10px;
-    box-shadow: 0 0 10px  grey;
-    header, footer
+    @include marge-menu;
+    @include ombre-menu;
+    header
     {
         background-color: $menu4_bg;
         color: $menu4_font;
     }
-    & article
+    article
     {
-        margin-bottom: 20px;
-        padding: 20px;
-        & h4
-        {
-            margin-bottom: 20px;
-        }
-        & p
-        {
-
-        }
-        & .prix
+        @include marge-articles;
+        .prix
         {
             font-weight: 700;
         }

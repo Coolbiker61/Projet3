@@ -8,8 +8,8 @@
     background-color: $menu1_bg;
     color: $menu1_font;
     text-align: center;
-    margin: 30px 10px;
-    box-shadow: 0 0 10px  grey;
+    @include marge-menu;
+    @include ombre-menu;
     header, footer
     {
         background-color: $menu1_bg;
@@ -17,16 +17,7 @@
     }
     article
     {
-        margin-bottom: 20px;
-        padding: 20px;
-        h4
-        {
-            margin-bottom: 20px;
-        }
-        p
-        {
-
-        }
+        @include marge-articles;
         .prix
         {
             font-weight: 700;

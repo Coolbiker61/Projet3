@@ -9,8 +9,7 @@ header
     font-size: 50px;
     text-align: center;
     font-weight: 700;
-    @media screen and (min-width: 480px)
-    {
+    @media screen and (min-width: 480px) {
         font-size: 60px;
         margin-bottom: 40px;
     }
@@ -19,22 +18,24 @@ footer
 {
     display: flex;
     flex-direction: column;
-    padding: 30px 0;
-    font-size: 30px;
+    padding: 0;
+    font-size: $footer_font_size;
     align-content: center;
     position: fixed;
-    & h6
+    bottom: 0vh;
+    width: 100%;
+    h6
     {
-        margin: 20px auto;
+        margin: $footer_h6_marge auto;
         animation: wiggle 3s infinite;
         animation-fill-mode: backwards;
     }
-    @media screen and (min-width: 480px)
-    {
+    h6:nth-child(2) {
+        animation-delay: 1.5s;
+    }
+    @media screen and (min-width: 480px) {
         flex-direction: row;
         justify-content: space-between;
-        padding: 30px 10px;
-        font-size: 30px;
         & .elem_footer
         {
             margin: 20px;
