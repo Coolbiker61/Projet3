@@ -1,7 +1,10 @@
 #menu_liste
 {
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     align-content: center;
     
     #menu1, #menu2, #menu3, #menu4
@@ -10,9 +13,13 @@
         height: 320px;
         text-align: center;
         margin: 20px auto;
+        display: -webkit-box;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -webkit-box-pack: center;
+                justify-content: center;
         @include ombre-menu;
         & h2
         {
@@ -27,7 +34,9 @@
         @media screen and (min-width: 1024px) {
             height: 620px;
             width: 100%;
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                    flex-direction: column;
         }
     }
     #menu1
@@ -40,6 +49,9 @@
 
             @include gradient (#F04A5E, #F78F6A);
 
+        }
+        &:hover{
+            
         }
     }
     #menu2
@@ -65,7 +77,9 @@
     }
     @media screen and (min-width: 480px) {
         margin: 0 20px; 
-        flex-direction: row;
+        -webkit-box-orient: horizontal; 
+        -webkit-box-direction: normal; 
+                flex-direction: row;
         flex-wrap: wrap;
     }
     a {

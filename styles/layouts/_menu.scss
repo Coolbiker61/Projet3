@@ -1,6 +1,14 @@
-h4{
-	margin-bottom: 20px;
+article{
+	h4{
+		margin-bottom: 20px;
+	
+	}
 	&:hover{
-		text-decoration: underline;
+		h4{
+			display: inline-block;
+			-webkit-transition: 1s;
+			transition: 1s;
+			border-bottom: 1px solid black;
+		}
 	}
 }

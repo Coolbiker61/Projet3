@@ -22,5 +22,18 @@
         {
             font-weight: 700;
         }
+        h4::before {
+            display: inline-block;
+            content: url("../imgs/menu1g.png");
+            background-color:transparent;
+            border-color: transparent;
+        }
+        h4::after{
+            display: inline-block;
+            content: url("../imgs/menu1g.png");
+            background-color: transparent;
+            -webkit-transform: scaleX(-1);
+                    transform: scaleX(-1);
+        }
     }
 }

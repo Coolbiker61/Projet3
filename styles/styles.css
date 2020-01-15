@@ -408,13 +408,19 @@ a {
 a:visited {
   color: #fdcb46; }
 
-h4 {
+article h4 {
   margin-bottom: 20px; }
-  h4:hover {
-    text-decoration: underline; }
+article:hover h4 {
+  display: inline-block;
+  -webkit-transition: 1s;
+  transition: 1s;
+  border-bottom: 1px solid black; }
 
 #menu_liste {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   flex-direction: column;
   align-content: center; }
   #menu_liste #menu1, #menu_liste #menu2, #menu_liste #menu3, #menu_liste #menu4 {
@@ -422,8 +428,12 @@ h4 {
     height: 320px;
     text-align: center;
     margin: 20px auto;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
+    -webkit-box-pack: center;
     justify-content: center;
     box-shadow: 0 0 10px  grey; }
     #menu_liste #menu1 h2, #menu_liste #menu2 h2, #menu_liste #menu3 h2, #menu_liste #menu4 h2 {
@@ -437,12 +447,15 @@ h4 {
       #menu_liste #menu1, #menu_liste #menu2, #menu_liste #menu3, #menu_liste #menu4 {
         height: 620px;
         width: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
         flex-direction: column; } }
   #menu_liste #menu1 {
     background-color: #FCDFDB;
     color: #3C1218; }
     #menu_liste #menu1 i {
       font-size: 50px;
+      background: -webkit-gradient(linear, left top, right bottom, from(#F04A5E), to(#F78F6A));
       background: linear-gradient(to bottom right, #F04A5E 0%, #F78F6A 100%);
       -webkit-background-clip: text;
       background-clip: text;
@@ -451,6 +464,7 @@ h4 {
     background-color: #FFF5FE;
     color: #C77412; }
     #menu_liste #menu2 h2 {
+      background: -webkit-gradient(linear, left top, right bottom, from(#D8852E), to(#905BFD));
       background: linear-gradient(to bottom right, #D8852E 0%, #905BFD 100%);
       -webkit-background-clip: text;
       background-clip: text;
@@ -459,6 +473,7 @@ h4 {
     background-color: #F9F9F9;
     color: #0887FD; }
     #menu_liste #menu3 h2 {
+      background: -webkit-gradient(linear, left top, right bottom, from(#D8852E), to(#905BFD));
       background: linear-gradient(to bottom right, #D8852E 0%, #905BFD 100%);
       -webkit-background-clip: text;
       background-clip: text;
@@ -469,6 +484,8 @@ h4 {
   @media screen and (min-width: 480px) {
     #menu_liste {
       margin: 0 20px;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
       flex-direction: row;
       flex-wrap: wrap; } }
   @media screen and (min-width: 480px) {
@@ -507,6 +524,17 @@ h4 {
     padding: 20px; }
     #big_menu1 article .prix {
       font-weight: 700; }
+    #big_menu1 article h4::before {
+      display: inline-block;
+      content: url("../imgs/menu1g.png");
+      background-color: transparent;
+      border-color: transparent; }
+    #big_menu1 article h4::after {
+      display: inline-block;
+      content: url("../imgs/menu1g.png");
+      background-color: transparent;
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1); }
 
 #big_menu2 {
   background-color: #FFF5FE;
