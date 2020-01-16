@@ -1,9 +1,9 @@
-header, footer
+.header, .footer
 {
     background-color: $bg_he_fo;
     color: $font_he_fo;
 }
-header
+.header
 {
     padding: 30px;
     font-size: 50px;
@@ -14,10 +14,13 @@ header
         margin-bottom: 40px;
     }
 }
-footer
+.footer
 {
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     padding: 0;
     font-size: $footer_font_size;
     align-content: center;
@@ -27,15 +30,21 @@ footer
     h6
     {
         margin: $footer_h6_marge auto;
-        animation: wiggle 3s infinite;
-        animation-fill-mode: backwards;
+        -webkit-animation: wiggle 3s infinite;
+                animation: wiggle 3s infinite;
+        -webkit-animation-fill-mode: backwards;
+                animation-fill-mode: backwards;
     }
     h6:nth-child(2) {
-        animation-delay: 1.5s;
+        -webkit-animation-delay: 1.5s;
+                animation-delay: 1.5s;
     }
     @media screen and (min-width: 480px) {
-        flex-direction: row;
-        justify-content: space-between;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+                justify-content: space-between;
         & .elem_footer
         {
             margin: 20px;

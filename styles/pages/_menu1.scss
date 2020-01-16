@@ -14,6 +14,7 @@
     {
         background-color: $menu1_bg;
         color: $menu1_font;
+        
     }
     article
     {
@@ -22,7 +23,7 @@
         {
             font-weight: 700;
         }
-        h4::before {
+        /*h4::before {
             display: inline-block;
             content: url("../imgs/menu1g.png");
             background-color:transparent;
@@ -30,10 +31,17 @@
         }
         h4::after{
             display: inline-block;
-            content: url("../imgs/menu1g.png");
+            content: url("../imgs/menu1d.png");
             background-color: transparent;
             -webkit-transform: scaleX(-1);
                     transform: scaleX(-1);
+        }*/
+
+        .img-g{
+            height: 14px;
+        }
+        .img-d{
+            height: 14px;
         }
     }
 }

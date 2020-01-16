@@ -361,22 +361,25 @@ textarea {
       font-size: 40px;
       width: 300px; } }
 
-header, footer {
+.header, .footer {
   background-color: #579c87;
   color: #fdcb46; }
 
-header {
+.header {
   padding: 30px;
   font-size: 50px;
   text-align: center;
   font-weight: 700; }
   @media screen and (min-width: 480px) {
-    header {
+    .header {
       font-size: 60px;
       margin-bottom: 40px; } }
 
-footer {
+.footer {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   flex-direction: column;
   padding: 0;
   font-size: 30px;
@@ -384,21 +387,27 @@ footer {
   position: fixed;
   bottom: 0vh;
   width: 100%; }
-  footer h6 {
+  .footer h6 {
     margin: 10px auto;
+    -webkit-animation: wiggle 3s infinite;
     animation: wiggle 3s infinite;
+    -webkit-animation-fill-mode: backwards;
     animation-fill-mode: backwards; }
-  footer h6:nth-child(2) {
+  .footer h6:nth-child(2) {
+    -webkit-animation-delay: 1.5s;
     animation-delay: 1.5s; }
   @media screen and (min-width: 480px) {
-    footer {
+    .footer {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
       flex-direction: row;
+      -webkit-box-pack: justify;
       justify-content: space-between; }
-      footer .elem_footer {
+      .footer .elem_footer {
         margin: 20px; }
-      footer .cn {
+      .footer .cn {
         text-align: right; }
-      footer .ml {
+      .footer .ml {
         text-align: left; } }
 
 a {
@@ -408,13 +417,41 @@ a {
 a:visited {
   color: #fdcb46; }
 
-article h4 {
-  margin-bottom: 20px; }
-article:hover h4 {
-  display: inline-block;
-  -webkit-transition: 1s;
-  transition: 1s;
-  border-bottom: 1px solid black; }
+.categorie {
+  width: 780px;
+  margin: auto; }
+  .categorie:hover .ligne h4:after {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
+  .categorie .ligne {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between; }
+    .categorie .ligne h4 {
+      margin-bottom: 20px; }
+      .categorie .ligne h4:after {
+        display: block;
+        content: '';
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: -webkit-transform 500ms ease-in-out;
+        transition: -webkit-transform 500ms ease-in-out;
+        transition: transform 500ms ease-in-out;
+        transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+        -webkit-transform-origin: 0% 50%;
+        transform-origin: 0% 50%;
+        border-bottom: 3px solid black; }
+    .categorie .ligne .img-g {
+      text-align: left;
+      height: 18px; }
+    .categorie .ligne .img-d {
+      text-align: right;
+      height: 18px;
+      -webkit-transform: rotateX(-1);
+      transform: rotateX(-1); }
+  .categorie p {
+    text-align: left; }
 
 #menu_liste {
   display: -webkit-box;
@@ -521,20 +558,26 @@ article:hover h4 {
     color: #3C1218; }
   #big_menu1 article {
     margin-bottom: 20px;
-    padding: 20px; }
+    padding: 20px;
+    /*h4::before {
+        display: inline-block;
+        content: url("../imgs/menu1g.png");
+        background-color:transparent;
+        border-color: transparent;
+    }
+    h4::after{
+        display: inline-block;
+        content: url("../imgs/menu1d.png");
+        background-color: transparent;
+        -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
+    }*/ }
     #big_menu1 article .prix {
       font-weight: 700; }
-    #big_menu1 article h4::before {
-      display: inline-block;
-      content: url("../imgs/menu1g.png");
-      background-color: transparent;
-      border-color: transparent; }
-    #big_menu1 article h4::after {
-      display: inline-block;
-      content: url("../imgs/menu1g.png");
-      background-color: transparent;
-      -webkit-transform: scaleX(-1);
-      transform: scaleX(-1); }
+    #big_menu1 article .img-g {
+      height: 14px; }
+    #big_menu1 article .img-d {
+      height: 14px; }
 
 #big_menu2 {
   background-color: #FFF5FE;
