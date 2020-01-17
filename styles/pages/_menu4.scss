@@ -1,4 +1,4 @@
-#big_menu4
+.big_menu4
 {
     background-color: $menu4_bg;
     color: $menu4_font;
@@ -7,16 +7,19 @@
     @include ombre-menu;
     header
     {
-        background-color: $menu4_bg;
-        color: $menu4_font;
+        @include gradient ($menu4_font1, $menu4_font2);
     }
     article
     {
         @include marge-articles;
-        .prix
-        {
-            font-weight: 700;
+    }
+    h4{
+        &:after{
+            display: block;
+            content: '';
+            @include souligne($menu4_font);
         }
     }
 }
+
 

@@ -1,21 +1,23 @@
-#big_menu3
+.big_menu3
 {
     background-color: $menu3_bg;
-    color: $menu3_font;
+    color: $font_black;
     text-align: center;
     @include marge-menu;
     @include ombre-menu;
     header
     {
-        background-color: $menu3_bg;
-        color: $menu3_font;
+        @include gradient ($menu3_font1, $menu3_font2);
     }
     article
     {
         @include marge-articles;
-        .prix
-        {
-            font-weight: 700;
+    }
+    h4{
+        &:after{
+            display: block;
+            content: '';
+            @include souligne($font_black);
         }
     }
 }

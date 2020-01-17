@@ -1,21 +1,47 @@
-#big_menu2
+.big_menu2
 {
     background-color: $menu2_bg;
-    color: $menu2_font;
+    color: $menu2_font4;
     text-align: center;
     @include marge-menu;
     @include ombre-menu;
     header
     {
-        background-color: $menu2_bg;
-        color: $menu2_font;
+        @include gradient ($menu2_font1, $menu2_font3);
     }
     article
     {
         @include marge-articles;
-        .prix
-        {
-            font-weight: 700;
+    }
+}
+    
+.m2-brown{
+    color: $menu2_font1;
+    h4{
+         &:after{
+            display: block;
+            content: '';
+            @include souligne($menu2_font1);
+        }
+    }
+}
+.m2-purple{
+    color: $menu2_font2;
+    h4{
+        &:after{
+            display: block;
+            content: '';
+            @include souligne($menu2_font2);
+        }
+    } 
+}
+.m2-blue{
+    color: $menu2_font3;
+    h4{
+        &:after{
+            display: block;
+            content: '';
+            @include souligne($menu2_font3);
         }
     }
 }
