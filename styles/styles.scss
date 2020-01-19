@@ -1,7 +1,8 @@
-@import "./vendors/reset";
 @import "./utils/variables";
 @import "./utils/keyframes";
 @import "./utils/mixins";
+@import "./vendors/reset";
+@import "./base/font";
 @import "./compoments/bouton";
 @import "./layouts/header-footer";
 @import "./layouts/liens";

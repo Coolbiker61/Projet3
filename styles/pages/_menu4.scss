@@ -5,9 +5,13 @@
     text-align: center;
     @include marge-menu;
     @include ombre-menu;
+    font-family: caliban-std,sans-serif;
+    font-weight: 400;
+    font-style: normal;
     header
     {
         @include gradient ($menu4_font1, $menu4_font2);
+        font-family: 'kaushan_scriptregular';
     }
     article
     {

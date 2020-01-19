@@ -5,9 +5,11 @@
     text-align: center;
     @include marge-menu;
     @include ombre-menu;
+    font-family: 'nimbus_roman_no9_lregular', arial;
     header
     {
         @include gradient ($menu2_font1, $menu2_font3);
+        font-family: 'Croissant One', cursive;
     }
     article
     {

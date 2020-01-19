@@ -1,3 +1,26 @@
+@keyframes blink {
+  0% {
+    opacity: 0; }
+  40%, 60% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg); }
+  3% {
+    transform: rotate(-2deg); }
+  5% {
+    transform: rotate(5deg); }
+  6% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(0deg); } }
+@keyframes zoom {
+  0% {
+    transform: scale(1, 1); }
+  100% {
+    transform: scale(1.5, 1.5); } }
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
@@ -324,29 +347,36 @@ textarea {
   color: #000;
   padding: 0.2em 0; }
 
-@keyframes blink {
-  0% {
-    opacity: 0; }
-  40%, 60% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-@keyframes wiggle {
-  0% {
-    transform: rotate(0deg); }
-  3% {
-    transform: rotate(-2deg); }
-  5% {
-    transform: rotate(5deg); }
-  6% {
-    transform: rotate(0deg); }
-  100% {
-    transform: rotate(0deg); } }
-@keyframes zoom {
-  0% {
-    transform: scale(1, 1); }
-  100% {
-    transform: scale(1.5, 1.5); } }
+/*font header*/
+@font-face {
+  font-family: 'excite_bold';
+  src: url("../fonts/excib___-webfont.woff2") format("woff2"), url("../fonts/excib___-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+/*font titre menu 4*/
+@font-face {
+  font-family: 'kaushan_scriptregular';
+  src: url("../fonts/kaushanscript-regular-webfont.woff2") format("woff2"), url("../fonts/kaushanscript-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+/*font footer*/
+@font-face {
+  font-family: 'sinkin_sans400_regular';
+  src: url("../fonts/SinkinSans-400Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+/* font texte menu 2*/
+@font-face {
+  font-family: 'nimbus_roman_no9_lregular';
+  src: url("../fonts/NimbusRomNo9L-Reg-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+/*font titre menu 3*/
+@font-face {
+  font-family: 'dancing_script_otregular';
+  src: url("../fonts/dancingscript-regular-webfont.woff2") format("woff2"), url("../fonts/dancingscript-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 #prochainement {
   border-radius: 20px;
   background-color: #579c87;
@@ -371,6 +401,7 @@ textarea {
   color: #fdcb46; }
 
 .header {
+  font-family: 'excite_bold';
   padding: 30px;
   font-size: 50px;
   text-align: center;
@@ -381,6 +412,7 @@ textarea {
       margin-bottom: 40px; } }
 
 .footer {
+  font-family: 'sinkin_sans400_regular';
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -508,6 +540,7 @@ section .categorie {
   #menu_liste #menu1 {
     background-color: #FCDFDB;
     color: #3C1218;
+    font-family: 'Devonshire', cursive;
     -webkit-transform-origin: left 50%;
     transform-origin: left 50%; }
     #menu_liste #menu1 i {
@@ -517,6 +550,11 @@ section .categorie {
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent; }
+    #menu_liste #menu1 p {
+      font-family: ff-uberhand-pro, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      text-transform: uppercase; }
   #menu_liste #menu2 {
     background-color: #FFF5FE;
     color: #C77412;
@@ -525,16 +563,15 @@ section .categorie {
     transition: transform 2s;
     transition: transform 2s, -webkit-transform 2s;
     -webkit-transform-origin: right 50%;
-    transform-origin: right 50%; }
+    transform-origin: right 50%;
+    font-family: 'nimbus_roman_no9_lregular', arial; }
     #menu_liste #menu2 h2 {
       background: -webkit-gradient(linear, left top, right bottom, from(#E38913), to(#6E4CCC));
       background: linear-gradient(to bottom right, #E38913 0%, #6E4CCC 100%);
       -webkit-background-clip: text;
       background-clip: text;
-      -webkit-text-fill-color: transparent; }
-    #menu_liste #menu2:hover {
-      -webkit-transform: scale(1.5, 1.5);
-      transform: scale(1.5, 1.5); }
+      -webkit-text-fill-color: transparent;
+      font-family: 'Croissant One', cursive; }
   #menu_liste #menu3 {
     background-color: #F9F9F9;
     color: #0887FD;
@@ -543,16 +580,17 @@ section .categorie {
     transition: transform 2s;
     transition: transform 2s, -webkit-transform 2s;
     -webkit-transform-origin: left 50%;
-    transform-origin: left 50%; }
+    transform-origin: left 50%;
+    font-family: caliban-std,sans-serif;
+    font-weight: 400;
+    font-style: normal; }
     #menu_liste #menu3 h2 {
       background: -webkit-gradient(linear, left top, right bottom, from(#0431DF), to(#0887FD));
       background: linear-gradient(to bottom right, #0431DF 0%, #0887FD 100%);
       -webkit-background-clip: text;
       background-clip: text;
-      -webkit-text-fill-color: transparent; }
-    #menu_liste #menu3:hover {
-      -webkit-transform: scale(1.5, 1.5);
-      transform: scale(1.5, 1.5); }
+      -webkit-text-fill-color: transparent;
+      font-family: 'dancing_script_otregular'; }
   #menu_liste #menu4 {
     background-color: #FDFFFD;
     color: #72BF56;
@@ -561,16 +599,17 @@ section .categorie {
     transition: transform 2s;
     transition: transform 2s, -webkit-transform 2s;
     -webkit-transform-origin: right 50%;
-    transform-origin: right 50%; }
+    transform-origin: right 50%;
+    font-family: caliban-std,sans-serif;
+    font-weight: 400;
+    font-style: normal; }
     #menu_liste #menu4 h2 {
       background: -webkit-gradient(linear, left top, right bottom, from(#3D9339), to(#C0FD87));
       background: linear-gradient(to bottom right, #3D9339 0%, #C0FD87 100%);
       -webkit-background-clip: text;
       background-clip: text;
-      -webkit-text-fill-color: transparent; }
-    #menu_liste #menu4:hover {
-      -webkit-transform: scale(1.5, 1.5);
-      transform: scale(1.5, 1.5); }
+      -webkit-text-fill-color: transparent;
+      font-family: 'kaushan_scriptregular'; }
   @media screen and (min-width: 480px) {
     #menu_liste {
       margin: 0 20px;
@@ -606,9 +645,13 @@ section .categorie {
   text-align: center;
   margin: 30px 10px 120px;
   padding: 50px 10px;
-  box-shadow: 0 0 10px  grey; }
+  box-shadow: 0 0 10px  grey;
+  font-family: caliban-std,sans-serif;
+  font-weight: 400;
+  font-style: normal; }
   .big_menu1 header, .big_menu1 footer {
-    color: #3C1218; }
+    color: #3C1218;
+    font-family: 'Devonshire', cursive; }
     .big_menu1 header i, .big_menu1 footer i {
       font-size: 50px;
       background: -webkit-gradient(linear, left top, right bottom, from(#F04A5E), to(#F78F6A));
@@ -642,13 +685,15 @@ section .categorie {
   text-align: center;
   margin: 30px 10px 120px;
   padding: 50px 10px;
-  box-shadow: 0 0 10px  grey; }
+  box-shadow: 0 0 10px  grey;
+  font-family: 'nimbus_roman_no9_lregular', arial; }
   .big_menu2 header {
     background: -webkit-gradient(linear, left top, right bottom, from(#E38913), to(#6E4CCC));
     background: linear-gradient(to bottom right, #E38913 0%, #6E4CCC 100%);
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent; }
+    -webkit-text-fill-color: transparent;
+    font-family: 'Croissant One', cursive; }
   .big_menu2 article {
     margin-bottom: 20px;
     padding: 20px; }
@@ -704,13 +749,17 @@ section .categorie {
   text-align: center;
   margin: 30px 10px 120px;
   padding: 50px 10px;
-  box-shadow: 0 0 10px  grey; }
+  box-shadow: 0 0 10px  grey;
+  font-family: caliban-std,sans-serif;
+  font-weight: 400;
+  font-style: normal; }
   .big_menu3 header {
     background: -webkit-gradient(linear, left top, right bottom, from(#0887FD), to(#0431DF));
     background: linear-gradient(to bottom right, #0887FD 0%, #0431DF 100%);
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent; }
+    -webkit-text-fill-color: transparent;
+    font-family: 'dancing_script_otregular'; }
   .big_menu3 article {
     margin-bottom: 20px;
     padding: 20px; }
@@ -733,13 +782,17 @@ section .categorie {
   text-align: center;
   margin: 30px 10px 120px;
   padding: 50px 10px;
-  box-shadow: 0 0 10px  grey; }
+  box-shadow: 0 0 10px  grey;
+  font-family: caliban-std,sans-serif;
+  font-weight: 400;
+  font-style: normal; }
   .big_menu4 header {
     background: -webkit-gradient(linear, left top, right bottom, from(#3D9339), to(#C0FD87));
     background: linear-gradient(to bottom right, #3D9339 0%, #C0FD87 100%);
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent; }
+    -webkit-text-fill-color: transparent;
+    font-family: 'kaushan_scriptregular'; }
   .big_menu4 article {
     margin-bottom: 20px;
     padding: 20px; }
