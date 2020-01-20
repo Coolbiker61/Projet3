@@ -4,9 +4,10 @@
     border-radius: 20px;
     background-color: $bg_he_fo;
     color: $font_he_fo;
-    margin: 20px;
+    margin: 20px auto;
     padding: 20px 20px;
     font-size: 30px;
+    width: 230px;
     span {
         animation: blink 2.5s infinite;
         &:nth-child(2) {

@@ -1,9 +1,5 @@
 
-#premier, #second, #troisieme, #quatrieme
-{
-    color: #353535;
-    text-align: center;
-}
+
 .big_menu1
 {
     background-color: $menu1_bg;
@@ -11,13 +7,15 @@
     text-align: center;
     @include marge-menu;
     @include ombre-menu;
-    font-family: caliban-std,sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: 'segoe print', 'Kalam', cursive;
+    @media screen and (min-width: 880px) {   
+        margin: 30px 2vw $footer_marge_total_pc;
+    }
     header, footer
     {
         color: $menu1_font;
         font-family: 'Devonshire', cursive;
+        font-size: 50px;
         i
         {
             font-size: 50px;
@@ -28,14 +26,9 @@
     article
     {
         @include marge-articles;
-        .img-g{
-            height: 14px;
-        }
-        .img-d{
-            height: 14px;
-        }
     }
     h4{
+        font-size: 35px;
         &:after{
             display: block;
             content: '';
@@ -45,3 +38,13 @@
 
 }
 
+.img-g{
+    height: 14px;
+    padding-top: 10px;
+    width: 20vw;
+}
+.img-d{
+    height: 14px;
+    padding-top: 10px;
+    width: 20vw;
+}
