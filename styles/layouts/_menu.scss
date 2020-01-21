@@ -8,22 +8,43 @@
 		letter-spacing: -2px;
 		font-size: $nom_font_size;
 		font-weight: 900;
-		margin: 20px auto;
+		margin: 40px auto 20px;
+		@media screen and (min-width: 480px) {   
+	        margin: 50px auto 20px;
+	    }
+	    @media screen and (min-width: 680px) {   
+	        margin: 60px auto 20px;
+	    }
+	    @media screen and (min-width: 1200px) {   
+	        margin: 70px auto 20px;
+	    }
 	}
 }
-section .categorie{
-	margin: auto;
-	&:hover{
-		h4:after{
+section:nth-of-type(2){
+	@media screen and (min-width: 880px) {   
+        margin: 30px 2vw $footer_marge_total_pc;
+    }
+    @media screen and (min-width: 980px) {   
+        margin: 30px auto $footer_marge_total_pc;
+        width: 940px;
+    }
+    
+    header{
+    	margin: 100px auto;
+    }
+	.categorie{
+		margin: auto;
+		&:hover{
+			h4:after{
 				-webkit-transform: scaleX(1);
 				        transform: scaleX(1);
+			}
+		}
+		p{
+			
+			margin: 0 auto 10px 0;
 		}
 	}
-	p{
-		
-		margin: 0 auto 10px 0;
-	}
-	
 }
 .img-g{
 	text-align: left;
@@ -38,10 +59,15 @@ section .categorie{
 .ligne {
 	display: -webkit-box;
 	display: flex;
-	max-width: 780px;
 	margin: auto;
+	@media screen and (max-width: 1200px){
+		max-width: 780px;
+	}
+	
+
 	h4{
 		margin: 0 auto 20px;
+        font-size: 35px;
 	}
 	.img-g, .img-d{
 		height: $hauteur_barres;
@@ -60,6 +86,9 @@ section .categorie{
 	        width: 265px;
 	    }
 	}
+}
+.cate_nom{
+	margin: 0 20px;
 }
 .prix
 {

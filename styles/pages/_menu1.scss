@@ -8,9 +8,7 @@
     @include marge-menu;
     @include ombre-menu;
     font-family: 'segoe print', 'Kalam', cursive;
-    @media screen and (min-width: 880px) {   
-        margin: 30px 2vw $footer_marge_total_pc;
-    }
+    
     header, footer
     {
         color: $menu1_font;
@@ -47,4 +45,8 @@
     height: 14px;
     padding-top: 10px;
     width: 20vw;
+}
+.prix
+{
+    font-weight: 700;
 }

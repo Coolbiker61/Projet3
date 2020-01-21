@@ -10,6 +10,7 @@
     {
         @include gradient ($menu2_font1, $menu2_font3);
         font-family: 'Croissant One', cursive;
+        font-size: 50px;
     }
     article
     {
@@ -20,7 +21,8 @@
 .m2-brown{
     color: $menu2_font1;
     h4{
-         &:after{
+        font-weight: 700;
+        &:after{
             display: block;
             content: '';
             @include souligne($menu2_font1);
@@ -30,6 +32,7 @@
 .m2-purple{
     color: $menu2_font2;
     h4{
+        font-weight: 700;
         &:after{
             display: block;
             content: '';
@@ -40,6 +43,7 @@
 .m2-blue{
     color: $menu2_font3;
     h4{
+        font-weight: 700;
         &:after{
             display: block;
             content: '';
