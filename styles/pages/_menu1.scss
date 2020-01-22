@@ -1,5 +1,3 @@
-
-
 .big_menu1
 {
     background-color: $menu1_bg;
@@ -17,7 +15,7 @@
         i
         {
             font-size: 50px;
-            @include gradient ($menu1_note1, $menu1_note2);
+            @include gradient ($menu1_note1, $menu1_note2, "note");
         }
         
     }
@@ -35,6 +33,23 @@
     }
 
 }
+.img-g, .img-d{
+    height: $hauteur_barres;
+    width: 25vw;
+    display: none;
+    @media screen and (min-width: 480px) {   
+        display: inline-block;
+    }
+    @media screen and (min-width: 700px) {   
+        width: 27vw;
+    }
+    @media screen and (min-width: 780px) {   
+        width: 29vw;
+    }
+    @media screen and (min-width: 870px) {   
+        width: 265px;
+    }
+}
 
 .img-g{
     height: 14px;
@@ -45,8 +60,4 @@
     height: 14px;
     padding-top: 10px;
     width: 20vw;
-}
-.prix
-{
-    font-weight: 700;
 }

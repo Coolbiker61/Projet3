@@ -22,18 +22,21 @@
 }
 section:nth-of-type(2){
 	@media screen and (min-width: 880px) {   
-        margin: 30px 2vw $footer_marge_total_pc;
+        margin: 0 2vw $footer_marge_total_pc;
     }
-    @media screen and (min-width: 980px) {   
-        margin: 30px auto $footer_marge_total_pc;
-        width: 940px;
+    @media screen and (min-width: 1060px) {   
+        margin: 0 auto $footer_marge_total_pc;
+        width: 1024px;
     }
     
     header{
-    	margin: 100px auto;
+    	margin: 0 auto $menu_padding_tb;
     }
 	.categorie{
-		margin: auto;
+		margin: 0 auto 50px;
+		@media screen and (min-width: 550px){
+			margin: 0 auto 80px;
+		}
 		&:hover{
 			h4:after{
 				-webkit-transform: scaleX(1);
@@ -43,7 +46,11 @@ section:nth-of-type(2){
 		p{
 			
 			margin: 0 auto 10px 0;
+			font-size: $menu_font_size_phone;
 		}
+	}
+	footer{
+		margin: $menu_padding_tb auto 0;
 	}
 }
 .img-g{
@@ -59,39 +66,24 @@ section:nth-of-type(2){
 .ligne {
 	display: -webkit-box;
 	display: flex;
-	margin: auto;
-	@media screen and (max-width: 1200px){
-		max-width: 780px;
-	}
-	
-
+	margin: 0 10% 10px;
+	max-width: 850px;
+	font-size: $menu_font_size_phone;
 	h4{
-		margin: 0 auto 20px;
+		margin: 0 auto 30px;
         font-size: 35px;
 	}
-	.img-g, .img-d{
-		height: $hauteur_barres;
-	    width: 25vw;
-	    display: none;
-	    @media screen and (min-width: 480px) {   
-	        display: inline-block;
-	    }
-	    @media screen and (min-width: 700px) {   
-	        width: 27vw;
-	    }
-	    @media screen and (min-width: 780px) {   
-	        width: 29vw;
-	    }
-	    @media screen and (min-width: 870px) {   
-	        width: 265px;
-	    }
-	}
+	
 }
 .cate_nom{
 	margin: 0 20px;
+	max-width: none;
 }
 .prix
 {
-    font-weight: 700;
     align-content: end;
+}
+.bold
+{
+    font-weight: 700;
 }

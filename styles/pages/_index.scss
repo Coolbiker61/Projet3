@@ -7,14 +7,27 @@
             flex-direction: column;
     align-content: center;
     .bloc2menu{
+        display: -webkit-box;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -webkit-box-pack: center;
+                justify-content: center;
         @media screen and (min-width: 700px) {
-            flex-direction: row;
-            justify-content: space-between;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                    flex-direction: row;
+            -webkit-box-pack: justify;
+                    justify-content: space-between;
         }
-
+        a:hover{
+            z-index: 2;
+            & ~ .fond_survole{
+                visibility: visible;
+                opacity: 0.5;
+            }
+        }
     }
     #menu1, #menu2, #menu3, #menu4
     {
@@ -45,9 +58,6 @@
         &:hover{
             -webkit-transform : scale($taille_zoom, $taille_zoom);
                     transform : scale($taille_zoom, $taille_zoom);
-            &>body{
-                opacity: 0.5;
-            }
         }
         @media screen and (min-width: 700px) {
             width: 45vw;
@@ -77,8 +87,8 @@
         i
         {
             font-size: 50px;
-            @include gradient ($menu1_note1, $menu1_note2);
-            margin-bottom: 10px;
+            @include gradient ($menu1_note1, $menu1_note2, "note");
+            margin: 0 auto 10px;
         }
         -webkit-transform-origin: left 50%;
                 transform-origin: left 50%; 
@@ -138,7 +148,18 @@
 
 }
 
-
+.fond_survole{
+    background-color: white;
+    opacity: 0;
+    top:0vh;
+    bottom: 0vh;
+    right: 0vw;
+    left: 0vw;
+    position: fixed;
+    visibility: hidden;
+    -webkit-transition: opacity 2s ease-in-out;
+    transition: opacity 2s ease-in-out;
+}
 
 
 

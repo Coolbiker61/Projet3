@@ -12,10 +12,10 @@
         font-family: 'Croissant One', cursive;
         font-size: 50px;
     }
-    article
+    /*article
     {
         @include marge-articles;
-    }
+    }*/
 }
     
 .m2-brown{
@@ -51,3 +51,21 @@
         }
     }
 }
+
+.img-g, .img-d{
+        height: $hauteur_barres;
+        width: 25vw;
+        display: none;
+        @media screen and (min-width: 550px) {   
+            display: inline-block;
+        }
+        @media screen and (min-width: 700px) {   
+            width: 27vw;
+        }
+        @media screen and (min-width: 920px) {   
+            width: 25%;
+        }
+        @media screen and (min-width: 1060px) {   
+            width: 30%;
+        }
+    }

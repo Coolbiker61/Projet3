@@ -20,12 +20,13 @@ $font_black: #353535;
 $taille_zoom: 1.1;
 
 $header_font_size: 60px;
-
 $footer_h6_marge: 10px;
 $footer_font_size: 30px;
 $footer_marge_total_mobile: (4 * $footer_h6_marge) + (2 * $footer_font_size) + 20px;
 $footer_marge_total_pc: (4 * $footer_h6_marge) + $footer_font_size + 70px;
 
 $nom_font_size: 30px;
-
 $hauteur_barres: 18px;
+
+$menu_padding_tb: 100px;
+$menu_font_size_phone: 25px;

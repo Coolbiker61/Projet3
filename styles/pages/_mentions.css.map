@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACC,YAAE;EACD,SAAS,EAAE,IAAI;AAEhB,YAAE;EACD,SAAS,EAAE,IAAI;AAEhB,WAAC;EACA,MAAM,EAAE,SAAS",
+"sources": ["_mentions.scss"],
+"names": [],
+"file": "_mentions.css"
+}

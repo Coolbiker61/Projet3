@@ -32,6 +32,7 @@
     align-content: center;
     position: fixed;
     bottom: 0vh;
+    z-index: 5;
     h6
     {
         margin: $footer_h6_marge auto;
