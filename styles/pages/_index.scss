@@ -1,0 +1,171 @@
+#menu_liste
+{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    align-content: center;
+    .bloc2menu{
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -webkit-box-pack: center;
+                justify-content: center;
+        @media screen and (min-width: 700px) {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                    flex-direction: row;
+            -webkit-box-pack: justify;
+                    justify-content: space-between;
+        }
+        a:hover{
+            z-index: 2;
+            & ~ .fond_survole{
+                visibility: visible;
+                opacity: 0.5;
+            }
+        }
+    }
+    #menu1, #menu2, #menu3, #menu4
+    {
+        width: 80vw;
+        height: 110vw;
+        text-align: center;
+        margin: 20px auto;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -webkit-box-pack: center;
+                justify-content: center;
+        -webkit-transition: -webkit-transform 2s;
+        transition: -webkit-transform 2s;
+        transition: transform 2s;
+        transition: transform 2s, -webkit-transform 2s;
+        @include ombre-menu;
+        & h2
+        {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        & p {
+            font-size: 50px;
+        }
+        &:hover{
+            -webkit-transform : scale($taille_zoom, $taille_zoom);
+                    transform : scale($taille_zoom, $taille_zoom);
+        }
+        @media screen and (min-width: 700px) {
+            width: 45vw;
+            height: 61vw;
+        
+        }
+        @media screen and (min-width: 1024px) {
+            width: 40vw;
+            height: 55vw;
+        }
+    }
+
+    @media screen and (min-width: 480px) {
+        margin: 20px 20px; 
+    }
+    @media screen and (min-width: 700px) {
+        margin: 50px 30px; 
+    }
+    @media screen and (min-width: 1024px) {
+        margin: 50px 8vw; 
+    }
+    #menu1
+    {
+        background-color: $menu1_bg;
+        color: $menu1_font;
+        font-family: 'Devonshire', cursive;
+        i
+        {
+            font-size: 50px;
+            @include gradient ($menu1_note1, $menu1_note2, "note");
+            margin: 0 auto 10px;
+        }
+        -webkit-transform-origin: left 50%;
+                transform-origin: left 50%; 
+        p{
+            font-family: 'segoe print', 'Kalam', cursive;
+            text-transform: uppercase;
+        }
+    }
+    #menu2
+    {
+        background-color: $menu2_bg;
+        color: $menu2_font4;
+        h2{
+            @include gradient ($menu2_font1, $menu2_font3);
+            font-family: 'Croissant One', cursive;
+        }
+        -webkit-transition: -webkit-transform 2s;
+        transition: -webkit-transform 2s;
+        transition: transform 2s;
+        transition: transform 2s, -webkit-transform 2s;
+        -webkit-transform-origin: right 50%;
+                transform-origin: right 50%; 
+        font-family: 'nimbus_roman_no9_lregular', arial;
+    }
+    #menu3
+    {
+        background-color: $menu3_bg;
+        color: $menu3_font1;
+        h2{
+            @include gradient ($menu3_font2, $menu3_font1);
+            font-family: 'dancing_script_otregular';
+        }
+        -webkit-transition: -webkit-transform 2s;
+        transition: -webkit-transform 2s;
+        transition: transform 2s;
+        transition: transform 2s, -webkit-transform 2s;
+        -webkit-transform-origin: left 50%;
+                transform-origin: left 50%; 
+        font-family: 'segoe print', 'Kalam', cursive;
+    }
+    #menu4
+    {
+        background-color: $menu4_bg;
+        color: $menu4_font;
+        -webkit-transition: -webkit-transform 2s;
+        transition: -webkit-transform 2s;
+        transition: transform 2s;
+        transition: transform 2s, -webkit-transform 2s;
+        -webkit-transform-origin: right 50%;
+                transform-origin: right 50%; 
+        h2{
+            @include gradient ($menu4_font1, $menu4_font2);
+            font-family: 'kaushan_scriptregular';
+        }
+        font-family: 'segoe print', 'Kalam', cursive;
+    }
+
+}
+
+.fond_survole{
+    background-color: white;
+    opacity: 0;
+    top:0vh;
+    bottom: 0vh;
+    right: 0vw;
+    left: 0vw;
+    position: fixed;
+    visibility: hidden;
+    -webkit-transition: opacity 2s ease-in-out;
+    transition: opacity 2s ease-in-out;
+}
+
+
+
+.bouton {
+    margin-bottom: 180px;
+    @media screen and (min-width: 480px) {
+        margin-bottom: 150px; 
+    }
+}

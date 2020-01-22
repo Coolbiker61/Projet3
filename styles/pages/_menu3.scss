@@ -1,0 +1,26 @@
+.big_menu3
+{
+    background-color: $menu3_bg;
+    color: $font_black;
+    text-align: center;
+    @include marge-menu;
+    @include ombre-menu;
+    font-family: 'segoe print', 'Kalam', cursive;
+    header
+    {
+        @include gradient ($menu3_font2, $menu3_font1);
+        font-family: 'dancing_script_otregular';
+        font-size: 80px;
+    }
+    article
+    {
+        @include marge-articles;
+    }
+    h4{
+        &:after{
+            display: block;
+            content: '';
+            @include souligne($font_black);
+        }
+    }
+}
