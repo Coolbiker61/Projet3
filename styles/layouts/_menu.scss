@@ -20,15 +20,7 @@
 	    }
 	}
 }
-section:nth-of-type(2){
-	@media screen and (min-width: 880px) {   
-        margin: 0 2vw $footer_marge_total_pc;
-    }
-    @media screen and (min-width: 1060px) {   
-        margin: 0 auto $footer_marge_total_pc;
-        width: 1024px;
-    }
-    
+.big_menu1, .big_menu2, .big_menu3, .big_menu4{
     header{
     	margin: 0 auto $menu_padding_tb;
     }
@@ -43,10 +35,14 @@ section:nth-of-type(2){
 				        transform: scaleX(1);
 			}
 		}
-		p{
-			
+		p, .fin_menu{
 			margin: 0 auto 10px 0;
 			font-size: $menu_font_size_phone;
+			line-height: 1.5;			
+			text-align: left;
+		}
+		.fin_menu{
+			margin: 0 10% 10px;
 		}
 	}
 	footer{

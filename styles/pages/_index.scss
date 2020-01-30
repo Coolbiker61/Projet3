@@ -42,10 +42,6 @@
                 flex-direction: column;
         -webkit-box-pack: center;
                 justify-content: center;
-        -webkit-transition: -webkit-transform 2s;
-        transition: -webkit-transform 2s;
-        transition: transform 2s;
-        transition: transform 2s, -webkit-transform 2s;
         @include ombre-menu;
         & h2
         {
@@ -55,9 +51,27 @@
         & p {
             font-size: 50px;
         }
-        &:hover{
-            -webkit-transform : scale($taille_zoom, $taille_zoom);
-                    transform : scale($taille_zoom, $taille_zoom);
+        & i, & h2, & p{
+            -webkit-transition: -webkit-transform 2s;
+            transition: -webkit-transform 2s;
+            transition: transform 2s;
+            transition: transform 2s, -webkit-transform 2s;
+        }
+        &:hover h2, &:hover p, &:hover i{
+            -webkit-transform : scale($taille_zoom_lg, $taille_zoom_lg);
+                    transform : scale($taille_zoom_lg, $taille_zoom_lg);
+                    @media screen and (min-width: 700px) {
+                        -webkit-transform : scale($taille_zoom_sm, $taille_zoom_sm);
+                        transform : scale($taille_zoom_sm, $taille_zoom_sm);
+                    }
+                    @media screen and (min-width: 750px) {
+                        -webkit-transform : scale($taille_zoom_md, $taille_zoom_md);
+                        transform : scale($taille_zoom_md, $taille_zoom_md);
+                    }
+                    @media screen and (min-width: 831px) {
+                        -webkit-transform : scale($taille_zoom_lg, $taille_zoom_lg);
+                        transform : scale($taille_zoom_lg, $taille_zoom_lg);
+                    }
         }
         @media screen and (min-width: 700px) {
             width: 45vw;
@@ -104,6 +118,10 @@
         h2{
             @include gradient ($menu2_font1, $menu2_font3);
             font-family: 'Croissant One', cursive;
+            font-size: 25px;
+        }
+        p{
+            letter-spacing: 2px;
         }
         -webkit-transition: -webkit-transform 2s;
         transition: -webkit-transform 2s;
@@ -165,6 +183,7 @@
 
 .bouton {
     margin-bottom: 180px;
+    text-align: center;
     @media screen and (min-width: 480px) {
         margin-bottom: 150px; 
     }

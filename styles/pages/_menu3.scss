@@ -23,4 +23,11 @@
             @include souligne($font_black);
         }
     }
+    @media screen and (min-width: 880px) {   
+        margin: 0 2vw $footer_marge_total_pc;
+    }
+    @media screen and (min-width: 1060px) {   
+        margin: 0 auto $footer_marge_total_pc;
+        width: 1024px;
+    }
 }
